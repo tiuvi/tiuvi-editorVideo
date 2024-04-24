@@ -19,11 +19,13 @@ https://github.com/Vanilagy/webm-muxer
 These files are given separately and are not a direct compilation of your libraries
 
 Change the scripts imported in the worker, by the location in your directories.
+
+## Código
+
 importScripts(
     //desmultiplexacion
     'https://cell1.tiuvi.com:1030/mp4box.js',
     'https://cell1.tiuvi.com:1030/webmDemuxer.js',
-
     //Multiplexacion
     'https://cell1.tiuvi.com:1030/mp4-multiplexer.js',
     'https://cell1.tiuvi.com:1030/webm-multiplexer.js',
