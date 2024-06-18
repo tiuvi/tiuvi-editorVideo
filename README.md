@@ -4,11 +4,8 @@ First web video editor, using web codecs and ffmpeg wasm. This video editor does
 Demuxer mp4
 https://github.com/gpac/mp4box.js
 
-Demuxer webm
+Demuxer webm -> This link does not have a cdn
 https://github.com/jscodec/jswebm
-
-Corte de videos
-https://github.com/ffmpegwasm
 
 Multiplexor mp4
 https://github.com/Vanilagy/mp4-muxer
@@ -16,19 +13,8 @@ https://github.com/Vanilagy/mp4-muxer
 Multiplexor webm
 https://github.com/Vanilagy/webm-muxer
 
-These files are given separately and are not a direct compilation of your libraries
+I am working here on a valid demo, I am currently making the script compatible in the browser environment and in the worker environment so that I can use it in both ways.
+https://tiuvi.com/videoEditorWebCodecs
 
-Change the scripts imported in the worker, by the location in your directories.
-
-## Código
-
-```javascript
-importScripts(
-    // Desmultiplexación
-    'https://cell1.tiuvi.com:1030/mp4box.js',
-    'https://cell1.tiuvi.com:1030/webmDemuxer.js',
-    // Multiplexación
-    'https://cell1.tiuvi.com:1030/mp4-multiplexer.js',
-    'https://cell1.tiuvi.com:1030/webm-multiplexer.js',
-);
-
+You can investigate the files directly in sources, videoStreamWorker.js is the main one to edit the video file
+![image](https://github.com/tiuvi/tiuvi-editorVideo/assets/69035383/624566ec-2643-4701-843f-38882618d911)
